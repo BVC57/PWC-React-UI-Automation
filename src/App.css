@@ -1,0 +1,429 @@
+/* App component CSS */
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.ScreenContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/* App component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Top Component CSS */
+.Topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid rgba(217, 57, 84, 1);
+  height: 46px;
+  box-sizing: border-box;
+}
+.Topbar div:first-child {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+  left: 16px;
+  gap: 12px;
+}
+.Topbar div img {
+  position: relative;
+  top: 25%;
+}
+.Topbar div:first-child p {
+  position: relative;
+  top: 50%;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Topbar div:last-child {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  right: 16px;
+  gap: 15px;
+}
+.Topbar div:last-child p {
+  position: relative;
+  top: 25%;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+/* Top Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Side Component CSS */
+.Sidebar {
+  width: 55px;
+  height: 100%;
+  border-style: none;
+  box-sizing: border-box;
+}
+.ComponentBtn {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ComponentBtn div {
+  width: 100%;
+  height: 186px;
+  display: flex;
+  flex-direction: column;
+}
+.ComponentBtn div button {
+  flex: 1;
+  border-style: none;
+}
+/* Side Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Table Component CSS */
+.Table-Maindiv {
+  height: max(310px, 70%);
+  width: min(1500px, 96%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.Table-div {
+  overflow-x: auto;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+table {
+  width: 98%;
+  margin-left: 1%;
+  border-collapse: collapse;
+}
+
+thead {
+  color: white;
+  display: flex;
+  background-color: rgba(217, 57, 84, 1);
+}
+
+table tr {
+  background-color: rgba(246, 230, 230, 1);
+  border-collapse: collapse;
+  display: flex;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
+
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid rgba(229, 184, 185, 1);
+}
+
+th {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table tr td:nth-child(1) {
+  flex: 2;
+  text-align: center;
+}
+table tr td:nth-child(2) {
+  flex: 4;
+  text-align: center;
+}
+table tr td:nth-child(3) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table tr td:nth-child(4) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  min-width: 8ch;
+}
+table tr td:nth-child(5) {
+  flex: 2;
+  text-align: center;
+}
+table tr td:nth-child(6) {
+  flex: 2;
+  display: flex;
+}
+table tr td:nth-child(6) div {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+}
+table tr td:nth-child(6) div button {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Table Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Pagination Component CSS */
+.Pagination {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.paginationbtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.paginationbtn div {
+  border: 1px solid rgba(224, 224, 224, 1);
+  background-color: rgba(224, 224, 224, 1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(119, 119, 119, 1);
+}
+
+.paginationbtn div:nth-child(1) {
+  width: 76px;
+  height: 30px;
+}
+
+.paginationbtn div:nth-child(2) {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(217, 57, 84, 1);
+  font-weight: 600;
+  color: white;
+}
+.paginationbtn div:nth-child(3) {
+  width: 51px;
+  height: 30px;
+}
+/* Pagination Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Homepage Component CSS */
+.Homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 2.5%;
+}
+/* Homepage Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Chatpage Component CSS */
+.Chatpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Section1 {
+  width: 100%;
+  height: min(100px, 20%);
+  display: flex;
+  flex-direction: row;
+}
+
+.Section1 button {
+  width: 153px;
+  height: 38px;
+  position: absolute;
+  top: 80px;
+  right: 10%;
+  background-color: rgba(217, 57, 84, 1);
+  border-style: none;
+  color: white;
+}
+
+@media (max-height: 510px) {
+  .Section1 button {
+    top: 70px;
+  }
+}
+
+/* @media (max-width: 380px) {
+  .Section1 button {
+    width: 25%;
+    height: 5%;
+  }
+} */
+/* Chatpage Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* Upload Component CSS */
+.Upload-Maindiv {
+  height: min(124px, 25%);
+  width: min(1500px, 96%);
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.Upload-Maindiv p:first-child {
+  height: max(16px, 20%);
+  margin: 0;
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.Upload-Subdiv {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.DragDrop {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 70%;
+  border: 1px dashed rgba(217, 57, 84, 1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Upload-btn {
+  width: min(153px, 30%);
+  height: min(38px, 40%);
+  background-color: rgba(217, 57, 84, 1);
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* Upload Component CSS */
+/**/
+/**/
+/**/
+/**/
+/**/
+/* hide the text details in pdf */
+.react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  overflow-x: scroll;
+  width: 100%;
+}
+/* .react-pdf__Page {
+  width: 90%;
+  overflow-x: scroll;
+  min-width: 90% !important;
+} */
+canvas.react-pdf__Page__canvas {
+  display: block;
+  user-select: none;
+}
+
+.react-pdf__Page__textContent.textLayer {
+  display: none;
+  /* width: 90%;
+  overflow-x: scroll; */
+}
+
+.react-pdf__Page__annotations.annotationLayer {
+  display: none;
+  width: 100%;
+}
+
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 20px; */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 800px; /* Set a default width for smaller screens */
+  max-height: 80%;
+  height: 170px;
+  overflow-y: auto;
+  text-align: center;
+}
+@media (max-width: 970px) {
+  .popup-container {
+    max-width: 90%;
+    width: 90%;
+  }
+}
